@@ -1,7 +1,7 @@
 /*
  * Este sketch es una modificación del ejemplo TinyGPS.
  * Muesta la localizacion (lat,long),la fecha, hora,satelites y velocidad.
- * 
+ *  
  * Autor: Nitrosito
  * Basado en ejemplos de la libreria TinyGPS++
  * Licencia:

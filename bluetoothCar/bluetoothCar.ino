@@ -35,8 +35,7 @@ void loop(){
     if(command!=prevCommand){
       digitalWrite (IN4, LOW);
       digitalWrite (IN1,LOW); 
-            digitalWrite (IN2,LOW); 
-
+      digitalWrite (IN2,LOW); 
       digitalWrite (IN3,LOW); 
 
       Serial.println(command);
@@ -55,12 +54,10 @@ void loop(){
         digitalWrite (IN1, HIGH);
         break;
       case 'L': 
-        digitalWrite (IN4, LOW);
         digitalWrite (IN3, HIGH);
         break;
       case 'R':
         digitalWrite (IN2, HIGH);
-        digitalWrite (IN1, LOW);
 
         break;
       case 'S': 
@@ -121,11 +118,5 @@ void loop(){
   } 
         //digitalWrite (IN4, LOW); 
 
-}
-else{
-	digitalWrite (IN4, LOW);
-	digitalWrite (IN3, LOW);
-	digitalWrite (IN2, LOW);
-	digitalWrite (IN1, LOW);
 }
  }

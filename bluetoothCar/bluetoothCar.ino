@@ -43,6 +43,7 @@ void loop(){
       case 'F': 
         digitalWrite (IN4, LOW);
         digitalWrite (IN3, HIGH); 
+        
         digitalWrite (IN2, HIGH);
         digitalWrite (IN1, LOW);
         //yellowCar.Forward_4W(velocity);
@@ -50,14 +51,21 @@ void loop(){
       case 'B': 
         digitalWrite (IN4, HIGH);
         digitalWrite (IN3, LOW); 
+        
         digitalWrite (IN2, LOW);
         digitalWrite (IN1, HIGH);
         break;
       case 'L': 
         digitalWrite (IN3, HIGH);
+        digitalWrite (IN4, LOW);
+        digitalWrite (IN2, LOW);
+        digitalWrite (IN1, HIGH);
         break;
       case 'R':
+        digitalWrite (IN3, LOW);
+        digitalWrite (IN4, HIGH);
         digitalWrite (IN2, HIGH);
+        digitalWrite (IN1, LOW);
 
         break;
       case 'S': 
